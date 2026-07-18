@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="384" viewBox="0 0 256 384"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="giron" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#4a4e58"/><stop offset="1" stop-color="#22242b"/>
+</linearGradient>
+</defs>
+<!-- iron gibbet tree -->
+<path d="M116 368 L108 80 Q106 48 132 46 L196 50 L196 66 L140 64 Q124 66 126 84 L136 368 Z" fill="url(#giron)"/>
+<path d="M84 368 L168 368 L160 344 L94 344 Z" fill="#22242b"/>
+<!-- chain -->
+<path d="M188 66 L188 118" stroke="#4a4e58" stroke-width="7"/>
+<circle cx="188" cy="80" r="6" fill="none" stroke="#22242b" stroke-width="3"/>
+<circle cx="188" cy="96" r="6" fill="none" stroke="#22242b" stroke-width="3"/>
+<!-- hanging cage -->
+<path d="M156 118 Q188 106 220 118 L214 218 Q188 236 162 218 Z" fill="none" stroke="url(#giron)" stroke-width="8"/>
+<path d="M168 116 L170 224 M188 112 L188 230 M208 116 L206 224" stroke="url(#giron)" stroke-width="5"/>
+<path d="M156 150 h64 M158 184 h60" stroke="url(#giron)" stroke-width="5"/>
+<!-- poor soul's remains -->
+<circle cx="188" cy="166" r="12" fill="#8a7f68"/>
+<path d="M182 180 q6 16 12 0" stroke="#8a7f68" stroke-width="6" fill="none"/>
+</svg>

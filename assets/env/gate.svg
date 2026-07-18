@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="640" viewBox="0 0 768 640"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#fff3d6"/><stop offset="0.45" stop-color="#e8b64c"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<linearGradient id="goldv" x1="0" y1="0" x2="1" y2="0">
+ <stop offset="0" stop-color="#a97b23"/><stop offset="0.5" stop-color="#ffe9b0"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<radialGradient id="haloG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#fff3d6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#ffe9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+</radialGradient>
+
+<linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#f2ede2"/><stop offset="0.6" stop-color="#d8d0c0"/><stop offset="1" stop-color="#b3a890"/>
+</linearGradient>
+</defs>
+<!-- GATE OF DAWN: the one clean thing in Hell -->
+<!-- steps -->
+<path d="M104 560 L664 560 L704 620 L64 620 Z" fill="#b3a890"/>
+<path d="M136 520 L632 520 L664 560 L104 560 Z" fill="#cfc7b8"/>
+<!-- pillars -->
+<path d="M148 120 L236 120 L228 520 L156 520 Z" fill="url(#stone)"/>
+<path d="M532 120 L620 120 L612 520 L540 520 Z" fill="url(#stone)"/>
+<path d="M160 140 L168 500 M224 140 L218 500 M544 140 L550 500 M608 140 L600 500" stroke="#b3a890" stroke-width="6"/>
+<!-- arch -->
+<path d="M148 200 Q384 -60 620 200 L620 120 L532 120 Q384 20 236 120 L148 120 Z" fill="url(#stone)"/>
+<path d="M188 170 Q384 -20 580 170" stroke="#b3a890" stroke-width="8" fill="none"/>
+<!-- capstone cross -->
+<rect x="374" y="18" width="20" height="64" fill="url(#gold)"/><rect x="352" y="38" width="64" height="20" fill="url(#gold)"/>
+<!-- sealed doors -->
+<path d="M236 520 L236 190 Q384 80 532 190 L532 520 Z" fill="#e6e0d2"/>
+<path d="M384 128 L384 520" stroke="#b3a890" stroke-width="10"/>
+<!-- great gold seal -->
+<circle cx="384" cy="330" r="86" fill="none" stroke="url(#goldv)" stroke-width="14"/>
+<circle cx="384" cy="330" r="60" fill="none" stroke="url(#goldv)" stroke-width="6"/>
+<rect x="376" y="270" width="16" height="120" fill="url(#gold)"/><rect x="324" y="310" width="120" height="16" fill="url(#gold)"/>
+<!-- seven small vestige sockets around the seal -->
+<g fill="#b3a890">
+<circle cx="384" cy="222" r="10"/><circle cx="470" cy="260" r="10"/><circle cx="492" cy="348" r="10"/><circle cx="440" cy="416" r="10"/><circle cx="328" cy="416" r="10"/><circle cx="276" cy="348" r="10"/><circle cx="298" cy="260" r="10"/>
+</g>
+</svg>

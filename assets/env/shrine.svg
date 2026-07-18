@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="512" viewBox="0 0 384 512"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="basalt" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#332e3d"/><stop offset="0.5" stop-color="#201c28"/><stop offset="1" stop-color="#121017"/>
+</linearGradient>
+<radialGradient id="sickG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#c8e87a"/><stop offset="0.4" stop-color="#7fae3e" stop-opacity="0.7"/><stop offset="1" stop-color="#7fae3e" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<!-- profane shrine: inverted chapel of black basalt -->
+<!-- base slab -->
+<path d="M32 452 L352 452 L332 496 L52 496 Z" fill="#121017"/>
+<!-- main inverted-arch mass: wide at top, tapering down -->
+<path d="M48 92 L336 92 L312 400 Q292 452 192 456 Q92 452 72 400 Z" fill="url(#basalt)"/>
+<!-- top spikes pointing DOWN (inversion) hanging over the facade -->
+<path d="M64 92 L88 150 L108 92 Z M118 92 L142 172 L164 92 Z M172 92 L192 200 L212 92 Z M220 92 L244 172 L266 92 Z M276 92 L300 150 L320 92 Z" fill="#0c0a10"/>
+<!-- crown battlements above -->
+<path d="M48 92 L48 44 L86 44 L86 68 L122 68 L122 30 L166 30 L166 56 L218 56 L218 30 L262 30 L262 68 L298 68 L298 44 L336 44 L336 92 Z" fill="#201c28"/>
+<!-- inverted cross finial -->
+<rect x="186" y="8" width="12" height="44" fill="#0c0a10"/><rect x="172" y="36" width="40" height="12" fill="#0c0a10"/>
+<!-- niche with void -->
+<path d="M136 200 Q192 156 248 200 L248 340 Q192 372 136 340 Z" fill="#050408"/>
+<path d="M136 200 Q192 156 248 200" stroke="#57454c" stroke-width="6" fill="none"/>
+<!-- sickly candles -->
+<circle cx="110" cy="380" r="26" fill="url(#sickG)"/><circle cx="274" cy="380" r="26" fill="url(#sickG)"/>
+<rect x="105" y="374" width="10" height="26" fill="#c9bfa8"/><rect x="269" y="374" width="10" height="26" fill="#c9bfa8"/>
+<path d="M110 366 q6 8 0 14 q-6 -6 0 -14 M274 366 q6 8 0 14 q-6 -6 0 -14" fill="#c8e87a"/>
+<!-- carved demon glyphs -->
+<path d="M84 240 q14 10 0 24 M84 300 q14 10 0 24 M300 240 q-14 10 0 24 M300 300 q-14 10 0 24" stroke="#57454c" stroke-width="4" fill="none"/>
+</svg>

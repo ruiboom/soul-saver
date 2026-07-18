@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#fff3d6"/><stop offset="0.45" stop-color="#e8b64c"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<linearGradient id="goldv" x1="0" y1="0" x2="1" y2="0">
+ <stop offset="0" stop-color="#a97b23"/><stop offset="0.5" stop-color="#ffe9b0"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<radialGradient id="haloG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#fff3d6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#ffe9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<ellipse cx="64" cy="72" rx="44" ry="28" fill="#c9945a"/>
+<ellipse cx="64" cy="66" rx="44" ry="26" fill="#e0b070"/>
+<path d="M40 56 q8 14 -2 24 M62 52 q8 14 -2 26 M86 56 q6 12 -2 22" stroke="#a8743c" stroke-width="5" fill="none"/>
+<path d="M30 52 Q64 36 98 52" stroke="#f2d4a0" stroke-width="4" fill="none"/>
+</svg>

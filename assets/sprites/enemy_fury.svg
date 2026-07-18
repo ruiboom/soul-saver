@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="wing" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#6b2433"/><stop offset="1" stop-color="#31121c"/>
+</linearGradient>
+</defs>
+<!-- winged shrike, wings spread -->
+<path d="M64 58 Q40 30 8 34 Q22 44 26 56 Q14 58 4 68 Q22 70 32 78 Q24 88 24 98 Q44 88 60 74 Z" fill="url(#wing)"/>
+<path d="M64 58 Q88 30 120 34 Q106 44 102 56 Q114 58 124 68 Q106 70 96 78 Q104 88 104 98 Q84 88 68 74 Z" fill="url(#wing)"/>
+<!-- wing bones -->
+<path d="M62 62 Q40 44 16 40 M62 66 Q36 62 10 66 M66 62 Q88 44 112 40 M66 66 Q92 62 118 66" stroke="#14101a" stroke-width="3" fill="none" opacity="0.8"/>
+<!-- body -->
+<path d="M56 54 Q64 44 72 54 Q78 74 70 96 L64 116 L58 96 Q50 74 56 54 Z" fill="url(#body)"/>
+<!-- head -->
+<circle cx="64" cy="52" r="11" fill="url(#body)"/>
+<circle cx="60" cy="50" r="4" fill="url(#ember)"/><circle cx="69" cy="50" r="4" fill="url(#ember)"/>
+<path d="M58 60 q6 5 12 0 l-6 6 Z" fill="#0c0910"/>
+<!-- claws tail -->
+<path d="M64 112 l-6 12 M64 112 l6 12" stroke="#1a141d" stroke-width="4"/>
+</svg>

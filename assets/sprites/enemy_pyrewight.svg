@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="flameV" x1="0" y1="1" x2="0" y2="0">
+ <stop offset="0" stop-color="#8a2f1d"/><stop offset="0.45" stop-color="#ff6b2b"/><stop offset="0.8" stop-color="#ffb46b"/><stop offset="1" stop-color="#ffe9b0"/>
+</linearGradient>
+</defs>
+<!-- burning revenant -->
+<path d="M64 6 Q76 26 70 38 Q86 32 88 16 Q98 40 88 56 Q104 52 108 40 Q112 68 96 82 Q100 100 86 112 L78 100 L74 118 L64 104 L54 118 L50 100 L42 112 Q28 100 32 82 Q16 68 20 40 Q24 52 40 56 Q30 40 40 16 Q42 32 58 38 Q52 26 64 6 Z" fill="url(#flameV)" opacity="0.95"/>
+<!-- charred core skeleton -->
+<path d="M56 44 Q64 38 72 44 Q76 60 72 76 L66 96 L62 96 L56 76 Q52 60 56 44 Z" fill="#1a0e12" opacity="0.85"/>
+<circle cx="60" cy="50" r="4" fill="#ffe9b0"/><circle cx="69" cy="50" r="4" fill="#ffe9b0"/>
+<path d="M58 62 q7 4 13 0" stroke="#ffe9b0" stroke-width="2.4" fill="none"/>
+<path d="M52 70 l-10 8 M76 70 l10 8" stroke="#1a0e12" stroke-width="5"/>
+</svg>

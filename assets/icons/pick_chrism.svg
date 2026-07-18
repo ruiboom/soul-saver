@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#fff3d6"/><stop offset="0.45" stop-color="#e8b64c"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<linearGradient id="goldv" x1="0" y1="0" x2="1" y2="0">
+ <stop offset="0" stop-color="#a97b23"/><stop offset="0.5" stop-color="#ffe9b0"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<radialGradient id="haloG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#fff3d6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#ffe9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="56" y="8" width="16" height="12" rx="3" fill="#a97b23"/>
+<path d="M50 22 L78 22 L84 40 Q90 74 78 100 Q64 110 50 100 Q38 74 44 40 Z" fill="#ffe9b0" opacity="0.55"/>
+<path d="M48 56 Q44 80 52 96 Q64 104 76 96 Q84 80 80 56 Q64 64 48 56 Z" fill="url(#gold)" opacity="0.95"/>
+<path d="M52 30 Q56 44 52 52" stroke="#fff" stroke-width="3" fill="none" opacity="0.8"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="shroud" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#6b5a80"/><stop offset="0.55" stop-color="#43364f"/><stop offset="1" stop-color="#43364f" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="cold" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#e8f2ff"/><stop offset="0.4" stop-color="#9fc4e8"/><stop offset="1" stop-color="#9fc4e8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<!-- drifting shrouded wraith -->
+<path d="M40 30 Q64 8 88 30 Q100 44 96 70 Q104 96 92 118 L84 100 L78 122 L70 102 L62 124 L54 100 L46 118 Q34 94 36 68 Q28 44 40 30 Z" fill="url(#shroud)" opacity="0.92"/>
+<!-- hood void -->
+<path d="M50 38 Q64 26 78 38 Q84 48 80 62 Q64 70 48 62 Q44 48 50 38 Z" fill="#0c0910"/>
+<!-- cold eyes + open wail -->
+<circle cx="58" cy="48" r="6" fill="url(#cold)"/><circle cx="72" cy="48" r="6" fill="url(#cold)"/>
+<ellipse cx="65" cy="62" rx="5" ry="8" fill="url(#cold)" opacity="0.7"/>
+<!-- trailing wisps -->
+<path d="M42 80 q-14 8 -12 22 M90 78 q14 10 10 24" stroke="#6b5a80" stroke-width="4" fill="none" opacity="0.5"/>
+</svg>

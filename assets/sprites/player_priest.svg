@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#fff3d6"/><stop offset="0.45" stop-color="#e8b64c"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<linearGradient id="goldv" x1="0" y1="0" x2="1" y2="0">
+ <stop offset="0" stop-color="#a97b23"/><stop offset="0.5" stop-color="#ffe9b0"/><stop offset="1" stop-color="#a97b23"/>
+</linearGradient>
+<radialGradient id="haloG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#fff3d6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#ffe9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+</radialGradient>
+
+<linearGradient id="cassock" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#332b3a"/><stop offset="0.5" stop-color="#221d2b"/><stop offset="1" stop-color="#120f18"/>
+</linearGradient>
+<linearGradient id="stole" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#8a5fb8"/><stop offset="1" stop-color="#4a3070"/>
+</linearGradient>
+</defs>
+<!-- halo -->
+<ellipse cx="128" cy="52" rx="46" ry="14" fill="none" stroke="#ffe9b0" stroke-width="7" opacity="0.28"/>
+<ellipse cx="128" cy="52" rx="46" ry="14" fill="none" stroke="#fff3d6" stroke-width="3" opacity="0.85"/>
+<!-- cassock body, slight forward lean walking right -->
+<path d="M96 96 Q88 150 78 226 L112 232 Q116 180 120 160 Q126 185 128 232 L178 226 Q166 150 160 98 Q140 84 96 96 Z" fill="url(#cassock)"/>
+<!-- hem shadow -->
+<path d="M78 226 L112 232 L128 232 L178 226 L174 214 Q128 226 82 214 Z" fill="#0a080e"/>
+<!-- shoulder cape -->
+<path d="M92 96 Q128 78 164 96 L170 130 Q128 144 86 130 Z" fill="#1a1622"/>
+<path d="M92 96 Q128 78 164 96 L166 108 Q128 120 90 108 Z" fill="#3a3346"/>
+<!-- violet stole -->
+<path d="M112 100 L106 210 L122 212 L124 102 Z" fill="url(#stole)"/>
+<path d="M144 102 L146 212 L162 210 L152 100 Z" fill="url(#stole)"/>
+<rect x="104" y="196" width="20" height="14" fill="url(#gold)"/>
+<rect x="145" y="196" width="19" height="14" fill="url(#gold)"/>
+<!-- cincture -->
+<path d="M96 148 Q128 158 162 148 L162 158 Q128 168 96 158 Z" fill="url(#goldv)" opacity="0.9"/>
+<!-- pectoral cross -->
+<rect x="125" y="118" width="6" height="22" fill="url(#gold)"/><rect x="117" y="124" width="22" height="6" fill="url(#gold)"/>
+<!-- head facing right -->
+<circle cx="130" cy="62" r="24" fill="#d8b393"/>
+<path d="M108 58 Q106 40 130 38 Q154 40 152 58 Q142 48 128 48 Q114 50 108 58 Z" fill="#8d8d94"/>
+<!-- beard -->
+<path d="M112 64 Q112 92 130 96 Q150 92 150 64 Q150 80 130 84 Q112 80 112 64 Z" fill="#a8a8b0"/>
+<path d="M114 66 Q116 86 130 90 Q146 86 148 66 Q144 78 130 80 Q116 78 114 66 Z" fill="#c9c9d2"/>
+<!-- eyes closed in prayer-calm, facing right -->
+<path d="M132 60 q5 3 9 0" stroke="#3a2c22" stroke-width="2.5" fill="none"/>
+<path d="M116 60 q4 3 8 0" stroke="#3a2c22" stroke-width="2.5" fill="none"/>
+<!-- right arm folded, holding the censer chain against the chest -->
+<path d="M156 104 Q172 114 172 136 Q168 150 156 148 Q148 132 146 118 Z" fill="#2b2534"/>
+<circle cx="160" cy="142" r="7" fill="#c6a381"/>
+</svg>

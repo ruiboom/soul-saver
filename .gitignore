@@ -1,0 +1,13 @@
+# Godot
+.godot/
+export_presets.cfg
+export/
+
+# macOS
+.DS_Store
+
+# builds
+*.app
+*.dmg
+*.pck
+*.zip

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="640" viewBox="0 0 512 640"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="wiron" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#5a5f6b"/><stop offset="0.5" stop-color="#3a3e48"/><stop offset="1" stop-color="#1e2128"/>
+</linearGradient>
+<linearGradient id="furnace" x1="0" y1="1" x2="0" y2="0">
+ <stop offset="0" stop-color="#8a2f1d"/><stop offset="0.5" stop-color="#ff6b2b"/><stop offset="1" stop-color="#ffd9a0"/>
+</linearGradient>
+</defs>
+<!-- THE WARDEN: blind furnace jailer -->
+<!-- ragged iron skirt -->
+<path d="M136 380 Q120 500 108 600 L172 576 L196 616 L236 584 L276 616 L300 576 L364 600 Q352 500 336 380 Z" fill="url(#wiron)"/>
+<path d="M150 420 L164 560 M236 420 L236 580 M322 420 L308 560" stroke="#1e2128" stroke-width="10"/>
+<!-- torso with furnace ribcage -->
+<path d="M120 180 Q112 100 236 92 Q360 100 352 182 Q368 300 336 392 L136 392 Q104 298 120 180 Z" fill="url(#wiron)"/>
+<!-- furnace slits -->
+<g fill="url(#furnace)">
+<path d="M180 220 q10 40 0 84 l-22 -6 q-8 -40 0 -74 Z"/>
+<path d="M258 214 q12 44 0 96 l-24 0 q-12 -52 0 -96 Z"/>
+<path d="M314 220 q8 34 0 74 l-22 6 q-10 -44 0 -84 Z"/>
+</g>
+<path d="M168 306 q68 26 156 -2" stroke="#1e2128" stroke-width="14" fill="none"/>
+<path d="M164 258 q72 22 164 -2" stroke="#1e2128" stroke-width="14" fill="none"/>
+<!-- blind riveted helm, no eyes -->
+<path d="M182 96 Q178 30 236 26 Q294 30 290 96 Q294 132 236 138 Q178 132 182 96 Z" fill="url(#wiron)"/>
+<path d="M198 60 L274 60 M190 88 L282 88" stroke="#1e2128" stroke-width="8"/>
+<circle cx="204" cy="74" r="5" fill="#14161b"/><circle cx="236" cy="74" r="5" fill="#14161b"/><circle cx="268" cy="74" r="5" fill="#14161b"/>
+<!-- weeping heat seam where eyes should be -->
+<path d="M200 104 q36 14 72 0" stroke="#ff6b2b" stroke-width="5" fill="none" opacity="0.9"/>
+<!-- colossal arms -->
+<path d="M116 190 Q40 214 30 320 Q26 384 84 392 Q136 386 132 322 Q130 250 136 214 Z" fill="url(#wiron)"/>
+<path d="M356 190 Q432 214 442 320 Q446 384 388 392 Q336 386 340 322 Q342 250 336 214 Z" fill="url(#wiron)"/>
+<!-- knuckle rivets -->
+<circle cx="62" cy="352" r="9" fill="#1e2128"/><circle cx="92" cy="360" r="9" fill="#1e2128"/>
+<circle cx="410" cy="352" r="9" fill="#1e2128"/><circle cx="380" cy="360" r="9" fill="#1e2128"/>
+<!-- hanging chains with hooks -->
+<g stroke="#5a5f6b" stroke-width="8" fill="none">
+<path d="M84 396 Q80 452 96 500"/><path d="M388 396 Q392 452 376 500"/>
+</g>
+<path d="M96 500 q14 6 8 20 q-16 2 -14 -12 M376 500 q-14 6 -8 20 q16 2 14 -12" fill="#5a5f6b"/>
+<!-- shoulder braziers -->
+<path d="M120 172 q24 -20 48 -6 l-8 22 q-20 -10 -34 2 Z" fill="#1e2128"/>
+<path d="M352 172 q-24 -20 -48 -6 l8 22 q20 -10 34 2 Z" fill="#1e2128"/>
+</svg>

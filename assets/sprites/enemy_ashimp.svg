@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+</defs>
+<!-- hunched cinder imp -->
+<path d="M28 96 Q18 66 42 46 Q60 28 86 38 Q112 50 106 82 Q102 104 78 108 Q46 112 28 96 Z" fill="url(#body)"/>
+<!-- back spikes -->
+<path d="M40 48 L34 30 L50 40 Z M56 38 L56 18 L70 34 Z M76 36 L84 20 L90 40 Z" fill="#14101a"/>
+<!-- ember cracks -->
+<path d="M44 78 q10 -8 6 -20 M62 96 q4 -14 16 -16 M84 60 q-8 6 -6 18" stroke="#ff6b2b" stroke-width="3" fill="none" opacity="0.9"/>
+<path d="M44 78 q10 -8 6 -20" stroke="#ffd9a0" stroke-width="1.2" fill="none"/>
+<!-- arms -->
+<path d="M30 84 Q14 88 10 102 L22 106 Q26 94 36 92 Z" fill="url(#body)"/>
+<path d="M100 78 Q116 84 118 98 L106 102 Q102 90 94 88 Z" fill="url(#body)"/>
+<!-- eyes -->
+<circle cx="62" cy="60" r="12" fill="url(#ember)"/><circle cx="84" cy="64" r="10" fill="url(#ember)"/>
+<circle cx="62" cy="60" r="4" fill="#ffd9a0"/><circle cx="84" cy="64" r="3.2" fill="#ffd9a0"/>
+<!-- maw -->
+<path d="M56 84 Q70 94 88 84 Q80 98 68 98 Q60 96 56 84 Z" fill="#0c0910"/>
+<path d="M60 86 l4 6 M70 90 l3 6 M80 87 l-2 7" stroke="#c9bfa8" stroke-width="2.4"/>
+</svg>

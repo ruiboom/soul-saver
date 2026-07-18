@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="224" viewBox="0 0 256 224"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="bslt" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3d3846"/><stop offset="0.6" stop-color="#262230"/><stop offset="1" stop-color="#15121c"/>
+</linearGradient>
+</defs>
+<path d="M20 200 L48 96 L92 120 L120 30 L168 84 L200 60 L236 180 L220 208 L36 208 Z" fill="url(#bslt)"/>
+<path d="M120 30 L138 96 L92 120 M168 84 L158 150 M48 96 L84 170" stroke="#15121c" stroke-width="5" fill="none"/>
+<path d="M120 30 L168 84 L200 60 L236 180" stroke="#57536b" stroke-width="4" fill="none" opacity="0.6"/>
+<!-- faint ember vein -->
+<path d="M60 180 q30 -20 60 -8 q30 10 70 -6" stroke="#8a2f1d" stroke-width="4" fill="none" opacity="0.7"/>
+</svg>

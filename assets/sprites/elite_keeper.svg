@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="kbody" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#57454c"/><stop offset="0.5" stop-color="#372b33"/><stop offset="1" stop-color="#1c1520"/>
+</linearGradient>
+</defs>
+<!-- shrinekeeper: horned colossus (grey-ish base for per-keeper tinting) -->
+<path d="M96 160 Q88 92 192 84 Q296 92 288 162 Q304 250 272 306 L228 316 L232 262 Q192 276 152 262 L156 316 L112 306 Q80 248 96 160 Z" fill="url(#kbody)"/>
+<!-- great curved horns -->
+<path d="M136 96 Q92 76 78 30 Q116 44 140 66 Q148 80 136 96 Z" fill="#1c1520"/>
+<path d="M248 96 Q292 76 306 30 Q268 44 244 66 Q236 80 248 96 Z" fill="#1c1520"/>
+<path d="M132 90 Q100 72 88 42 M252 90 Q284 72 296 42" stroke="#57454c" stroke-width="5" fill="none"/>
+<!-- skull face plate -->
+<path d="M152 100 Q192 82 232 100 Q244 128 232 152 Q192 168 152 152 Q140 128 152 100 Z" fill="#c9bfa8"/>
+<path d="M162 118 a12 14 0 1 0 24 0 a12 14 0 1 0 -24 0 M198 118 a12 14 0 1 0 24 0 a12 14 0 1 0 -24 0" fill="#14101a"/>
+<circle cx="174" cy="120" r="6" fill="url(#ember)"/><circle cx="210" cy="120" r="6" fill="url(#ember)"/>
+<path d="M178 148 l6 12 M192 152 l0 12 M206 148 l-6 12" stroke="#c9bfa8" stroke-width="7"/>
+<!-- arms with cleaver fists -->
+<path d="M92 168 Q44 184 36 244 Q34 286 72 290 Q104 286 104 244 Q104 200 108 180 Z" fill="url(#kbody)"/>
+<path d="M292 168 Q340 184 348 244 Q350 286 312 290 Q280 286 280 244 Q280 200 276 180 Z" fill="url(#kbody)"/>
+<!-- ember furnace lines -->
+<path d="M150 200 q14 22 6 46 M234 196 q-14 24 -6 50 M192 190 q0 26 0 44" stroke="#ff6b2b" stroke-width="6" fill="none" opacity="0.9"/>
+<path d="M150 200 q14 22 6 46 M234 196 q-14 24 -6 50" stroke="#ffd9a0" stroke-width="2" fill="none"/>
+</svg>

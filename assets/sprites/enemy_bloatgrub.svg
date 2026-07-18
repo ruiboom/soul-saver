@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="grub" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#d6cbb2"/><stop offset="0.6" stop-color="#a89a80"/><stop offset="1" stop-color="#6e6353"/>
+</linearGradient>
+<radialGradient id="sick" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#c8e87a"/><stop offset="0.5" stop-color="#7fae3e"/><stop offset="1" stop-color="#7fae3e" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<!-- fat larva, segments -->
+<ellipse cx="64" cy="78" rx="52" ry="34" fill="url(#grub)"/>
+<path d="M20 70 Q30 56 44 52 M34 96 Q30 84 32 70 M56 108 Q50 92 52 62 M80 108 Q76 90 78 60 M100 98 Q98 84 98 68" stroke="#5c5142" stroke-width="4" fill="none" opacity="0.7"/>
+<!-- sickly boils -->
+<circle cx="46" cy="66" r="10" fill="url(#sick)"/><circle cx="76" cy="88" r="12" fill="url(#sick)"/><circle cx="94" cy="62" r="8" fill="url(#sick)"/>
+<circle cx="46" cy="66" r="3.4" fill="#e2f5a8"/><circle cx="76" cy="88" r="4" fill="#e2f5a8"/><circle cx="94" cy="62" r="2.6" fill="#e2f5a8"/>
+<!-- face end -->
+<circle cx="112" cy="76" r="14" fill="url(#grub)"/>
+<circle cx="112" cy="70" r="4" fill="#3d1b16"/><circle cx="118" cy="78" r="3" fill="#3d1b16"/>
+<path d="M104 84 q8 6 16 0" stroke="#3d1b16" stroke-width="3" fill="none"/>
+<!-- stub legs -->
+<path d="M28 106 l-4 10 M46 112 l-2 10 M66 114 l0 10 M86 112 l2 10 M102 106 l4 10" stroke="#6e6353" stroke-width="6"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><defs>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#3a2c31"/><stop offset="0.55" stop-color="#221c24"/><stop offset="1" stop-color="#14101a"/>
+</linearGradient>
+<radialGradient id="ember" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffd9a0"/><stop offset="0.35" stop-color="#ff9d4d"/><stop offset="1" stop-color="#ff6b2b" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#7a3524"/><stop offset="1" stop-color="#3d1b16"/>
+</linearGradient>
+
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#2c3242"/><stop offset="1" stop-color="#141824"/>
+</linearGradient>
+</defs>
+<!-- ledger-scribe: hunched clerk demon -->
+<path d="M36 58 Q40 30 68 28 Q96 30 98 60 Q106 92 92 112 L44 112 Q28 90 36 58 Z" fill="url(#ink)"/>
+<!-- beaked plague-clerk mask -->
+<path d="M58 40 Q70 30 82 40 Q88 48 84 56 L104 66 L82 62 Q70 68 60 60 Q54 50 58 40 Z" fill="#1a1420"/>
+<circle cx="68" cy="46" r="5" fill="url(#ember)"/><circle cx="68" cy="46" r="1.8" fill="#ffd9a0"/>
+<!-- clutched ledger (bone-white) -->
+<rect x="42" y="70" width="44" height="32" rx="3" fill="#c9bfa8" transform="rotate(-8 64 86)"/>
+<rect x="44" y="72" width="19" height="28" fill="#b3a890" transform="rotate(-8 64 86)"/>
+<path d="M48 78 h12 M48 84 h12 M48 90 h10 M68 78 h12 M68 84 h12 M68 90 h9" stroke="#5c5142" stroke-width="1.8" transform="rotate(-8 64 86)"/>
+<!-- quill -->
+<path d="M92 60 Q104 44 116 40 Q108 56 98 66 Z" fill="#8d8d94"/>
+<!-- grasping fingers over ledger -->
+<path d="M40 74 q-8 6 -6 14 M88 70 q10 4 10 12" stroke="#141824" stroke-width="6" fill="none"/>
+</svg>

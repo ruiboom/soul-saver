@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><defs>
+<radialGradient id="wispG" cx="0.5" cy="0.5" r="0.5">
+ <stop offset="0" stop-color="#ffffff"/><stop offset="0.3" stop-color="#e6f0ff"/><stop offset="0.7" stop-color="#cfe6ff" stop-opacity="0.5"/><stop offset="1" stop-color="#cfe6ff" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<circle cx="48" cy="42" r="34" fill="url(#wispG)"/>
+<circle cx="48" cy="42" r="12" fill="#ffffff"/>
+<path d="M48 60 Q44 76 48 90 Q52 76 48 60 Z" fill="#e6f0ff" opacity="0.8"/>
+<circle cx="30" cy="58" r="4" fill="#ffffff" opacity="0.7"/><circle cx="66" cy="56" r="3" fill="#ffffff" opacity="0.6"/>
+</svg>
