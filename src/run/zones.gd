@@ -37,8 +37,8 @@ func _apply(z: Dictionary) -> void:
 		return
 	var tags: Array = [&"fire"] if type == &"smoke" else [&"holy"]
 	var hits := horde.query_circle(z["pos"], float(z["r"]))
-	for idx in hits:
-		run.hit_enemy(idx, float(z["dmg"]), tags, z["pos"], false)
+	for k in range(hits.size() - 1, -1, -1):
+		run.hit_enemy(hits[k], float(z["dmg"]), tags, z["pos"], false)
 	run.hit_elites_at(z["pos"], float(z["r"]), float(z["dmg"]), tags)
 
 func _draw() -> void:

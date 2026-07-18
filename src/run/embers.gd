@@ -2,8 +2,9 @@ extends Node2D
 class_name Embers
 ## Grace embers released by slain demons. MultiMesh-rendered point sim.
 
-const CAP := 500
+const CAP := 1400
 const LIFETIME := 60.0
+const MERGE_R := 46.0        # embers landing near a recent one merge into it
 
 var pos := PackedVector2Array()
 var val := PackedFloat32Array()
@@ -35,18 +36,26 @@ func _ready() -> void:
 	buf.resize(CAP * 12)
 
 func spawn(at: Vector2, value: float) -> void:
+	# merge with a recently-spawned neighbour (same burst → one fatter pill,
+	# still exactly at the kill site — keeps the field readable and under cap)
+	var m2 := MERGE_R * MERGE_R
+	for k in range(count - 1, maxi(0, count - 64) - 1, -1):
+		if pulling[k] == 0 and age[k] < 3.0 and pos[k].distance_squared_to(at) < m2:
+			val[k] += value
+			return
 	if count >= CAP:
-		# fold into the nearest existing ember so no grace is ever lost
+		# field saturated: fold into the nearest existing ember (sampled)
 		var best := -1
 		var best_d := 1e12
-		for i in count:
+		for s in 64:
+			var i := randi_range(0, count - 1)
 			var d := pos[i].distance_squared_to(at)
 			if d < best_d:
 				best_d = d; best = i
 		if best >= 0:
 			val[best] += value
 		return
-	pos[count] = at + Vector2(randf_range(-14, 14), randf_range(-14, 14))
+	pos[count] = at + Vector2(randf_range(-10, 10), randf_range(-10, 10))
 	val[count] = value
 	age[count] = 0.0
 	pulling[count] = 0
@@ -116,7 +125,9 @@ func _render() -> void:
 		if val[i] >= 100.0: tier = 3.0
 		elif val[i] >= 20.0: tier = 2.0
 		elif val[i] >= 5.0: tier = 1.0
-		var s := 1.0 + tier * 0.35
+		# pop-in: newborn pills scale up over ~0.2s with a slight overshoot
+		var pop := minf(age[i] * 5.0, 1.0)
+		var s := (1.0 + tier * 0.35) * pop * (1.0 + 0.35 * (1.0 - pop))
 		buf[o] = s; buf[o + 1] = 0.0; buf[o + 2] = 0.0; buf[o + 3] = pos[i].x
 		buf[o + 4] = 0.0; buf[o + 5] = s; buf[o + 6] = 0.0; buf[o + 7] = pos[i].y
 		buf[o + 8] = tier

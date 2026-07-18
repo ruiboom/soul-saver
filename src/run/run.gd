@@ -203,10 +203,10 @@ func _physics_process(delta: float) -> void:
 	if warden and warden.alive:
 		warden.tick(dt)
 	spawner.tick(dt)
-	embers.tick(dt)
 	projectiles.tick(dt)
 	zones.tick(dt)
 	weapons.tick(dt)
+	embers.tick(dt)   # after all weapons: kills this frame render their pill this frame
 	map.tick(dt)
 	_timeline(dt)
 	_shrine_logic()
@@ -432,6 +432,7 @@ func apply_item(type: StringName, at: Vector2) -> void:
 		&"chrism":
 			embers.vacuum_all()
 			vfx.holy_flash(player.global_position, 16)
+			hud.announce("VIAL OF CHRISM — grace gathers to you", Data.GRACE)
 			AudioDirector.play(&"levelup", -8.0)
 		&"wrath":
 			var hits := horde.query_circle(player.global_position, 1300.0)

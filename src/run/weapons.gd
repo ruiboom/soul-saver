@@ -93,8 +93,8 @@ func _fire_thurible(p: Dictionary) -> bool:
 	for k in amount:
 		var d := dir if k == 0 else -dir
 		var hits := horde.query_arc(ppos, d, float(p["range"]), deg_to_rad(float(p["arc"]) / 2.0))
-		for idx in hits:
-			run.hit_enemy(idx, float(p["dmg"]), [&"fire"], ppos)
+		for hk in range(hits.size() - 1, -1, -1):   # descending: swap-remove safe
+			run.hit_enemy(hits[hk], float(p["dmg"]), [&"fire"], ppos)
 		var mid := ppos + d * float(p["range"]) * 0.6
 		run.hit_others_at(mid, float(p["range"]) * 0.5, float(p["dmg"]), [&"fire"])
 		zones.add_zone(&"smoke", mid, float(p["range"]) * 0.42, float(p["smoke_dmg"]) * RunState.might, float(p["smoke_dur"]))
@@ -196,9 +196,10 @@ func _fire_bell(p: Dictionary) -> bool:
 	var r := float(p["radius"])
 	var hits := horde.query_circle(ppos, r)
 	var stun := float(p["stun"]) * (1.5 if RunState.is_exalted(&"bell") else 1.0)
-	for idx in hits:
-		run.hit_enemy(idx, float(p["dmg"]), [&"holy"], ppos, false)
-		horde.apply_stagger(idx, stun)
+	for k in range(hits.size() - 1, -1, -1):
+		var idx := hits[k]
+		if not run.hit_enemy(idx, float(p["dmg"]), [&"holy"], ppos, false):
+			horde.apply_stagger(idx, stun)
 	run.hit_others_at(ppos, r, float(p["dmg"]), [&"holy"])
 	_rings.append({"pos": ppos, "r": 30.0, "max_r": r, "t": 0.0})
 	AudioDirector.play(&"shockwave", -6.0)
@@ -225,8 +226,8 @@ func _fire_crown(p: Dictionary) -> bool:
 	var r := float(p["radius"])
 	var hits := horde.query_circle(ppos, r)
 	var exalted := RunState.is_exalted(&"crown")
-	for idx in hits:
-		var died: bool = run.hit_enemy(idx, float(p["dmg"]), [&"holy"], ppos, false)
+	for k in range(hits.size() - 1, -1, -1):
+		var died: bool = run.hit_enemy(hits[k], float(p["dmg"]), [&"holy"], ppos, false)
 		if died and exalted:
 			RunState.heal(1.0)
 	run.hit_others_at(ppos, r, float(p["dmg"]), [&"holy"])
@@ -245,8 +246,8 @@ func _fire_sword(p: Dictionary) -> bool:
 	var ppos := player.global_position
 	var r := float(p["radius"])
 	var hits := horde.query_circle(ppos, r)
-	for idx in hits:
-		run.hit_enemy(idx, float(p["dmg"]), [&"holy"], ppos)
+	for k in range(hits.size() - 1, -1, -1):
+		run.hit_enemy(hits[k], float(p["dmg"]), [&"holy"], ppos)
 	run.hit_others_at(ppos, r, float(p["dmg"]), [&"holy"])
 	_sword_t = 0.0
 	_ensure_sword(r)
@@ -318,8 +319,8 @@ func _tick_persistent(dt: float) -> void:
 			_rosary_hit_cd = 0.14
 			for b in _beads:
 				var hits := horde.query_circle(b.global_position, 30.0)
-				for idx in hits:
-					run.hit_enemy(idx, float(p["dmg"]), [&"holy"], b.global_position, false)
+				for k in range(hits.size() - 1, -1, -1):
+					run.hit_enemy(hits[k], float(p["dmg"]), [&"holy"], b.global_position, false)
 				run.hit_others_at(b.global_position, 30.0, float(p["dmg"]) * 0.5, [&"holy"])
 	# exalted thurible orbit + smoke trail
 	if _orbit_censer != null:
@@ -329,8 +330,8 @@ func _tick_persistent(dt: float) -> void:
 		_orbit_censer.global_position = opos
 		_orbit_censer.rotation = _orbit_angle + PI / 2.0
 		var hits := horde.query_circle(opos, 46.0)
-		for idx in hits:
-			run.hit_enemy(idx, float(p["dmg"]) * 0.35, [&"fire"], opos, false)
+		for k in range(hits.size() - 1, -1, -1):
+			run.hit_enemy(hits[k], float(p["dmg"]) * 0.35, [&"fire"], opos, false)
 		_smoke_drop_cd -= dt
 		if _smoke_drop_cd <= 0.0:
 			_smoke_drop_cd = 0.55
@@ -348,8 +349,8 @@ func _tick_persistent(dt: float) -> void:
 			for step in 3:
 				var sp := ppos + Vector2.from_angle(_sword_orbit_angle) * r * (0.55 + 0.3 * float(step))
 				var hits := horde.query_circle(sp, 50.0)
-				for idx in hits:
-					run.hit_enemy(idx, float(p["dmg"]) * 0.12, [&"holy"], sp, false)
+				for k in range(hits.size() - 1, -1, -1):
+					run.hit_enemy(hits[k], float(p["dmg"]) * 0.12, [&"holy"], sp, false)
 		elif _sword_t >= 0.0:
 			_sword_t += dt
 			var dur := 0.5
@@ -382,8 +383,8 @@ func _tick_persistent(dt: float) -> void:
 			pl["struck"] = true
 			var at: Vector2 = pl["pos"]
 			var hits := horde.query_circle(at, float(pl["r"]))
-			for idx in hits:
-				run.hit_enemy(idx, float(pl["dmg"]), [&"holy"], at)
+			for k in range(hits.size() - 1, -1, -1):
+				run.hit_enemy(hits[k], float(pl["dmg"]), [&"holy"], at)
 			run.hit_others_at(at, float(pl["r"]), float(pl["dmg"]), [&"holy"])
 			zones.add_zone(&"pillar", at, float(pl["r"]) * 0.8, float(pl["dmg"]) * 0.15, 0.8)
 			run.vfx.holy_flash(at, 12)

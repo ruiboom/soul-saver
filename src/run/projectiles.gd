@@ -79,8 +79,8 @@ func _damage_hits(p: Dictionary, radius: float, tags: Array = []) -> bool:
 	## Damage everything near the projectile; returns true when pierce is spent.
 	var hits := horde.query_circle(p["pos"], radius)
 	var spent := false
-	for idx in hits:
-		run.hit_enemy(idx, float(p["dmg"]), tags, p["pos"])
+	for k in range(hits.size() - 1, -1, -1):
+		run.hit_enemy(hits[k], float(p["dmg"]), tags, p["pos"])
 		p["pierce"] = int(p["pierce"]) - 1
 		if int(p["pierce"]) < 0:
 			spent = true

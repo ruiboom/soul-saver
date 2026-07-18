@@ -130,13 +130,17 @@ func damage(i: int, amount: float, tags: Array = [], from: Vector2 = Vector2.INF
 		return false
 	hp[i] -= amount
 	flash[i] = 1.0
-	# knockback: holy force is visible force
+	# knockback: holy force is visible force — capped so stacked AoEs can't
+	# fling demons across the map (they'd cross the despawn radius and "vanish")
 	if from != Vector2.INF:
 		var away := pos[i] - from
 		var d := away.length()
 		if d > 0.01:
 			var resist := 0.25 if special == &"tank" else 1.0
-			vel[i] += away / d * 230.0 * resist
+			vel[i] += away / d * 150.0 * resist
+			var sp := vel[i].length()
+			if sp > 380.0:
+				vel[i] *= 380.0 / sp
 	if hp[i] <= 0.0:
 		var p := pos[i]
 		var tname := type_names[type_id[i]]
