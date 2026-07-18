@@ -18,7 +18,7 @@ see the [Gameplay Guide](07-gameplay-guide.md).*
 brew install --cask godot
 
 # 2. Get the game
-git clone https://github.com/<you>/soul-saver.git
+git clone https://github.com/ruiboom/soul-saver.git
 cd soul-saver
 
 # 3. Play
